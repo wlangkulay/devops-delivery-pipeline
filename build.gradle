@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+apply plugin: 'war'
+
+war {
+    archiveName 'calcuapp.war'
+}
+
+repositories {
+    mavenCentral()
+}
+ 
+dependencies {
+    compile 'log4j:log4j:1.2.17'
+}
+
+jar {
+	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    manifest {
+        attributes 'Main-Class': 'net.tutorial.Calculator'
+    }
+}
