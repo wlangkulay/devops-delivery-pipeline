@@ -13,7 +13,7 @@ public class Math{
   }
 
   public int add(int a, int b){
-    return a-b;
+    return a+b;
   }
   
   public int sub(int a, int b){
@@ -21,7 +21,7 @@ public class Math{
   }  
 
   public int multiply(int a, int b){
-    delay();
+   
     return a*b;
   }
 }
