@@ -16,6 +16,7 @@ Math m = new Math();
 <br>
 <%="4 x 7 = " + m.multiply(4, 7)%>
 <br>
-
+<%="2 + 2 = " + m.add(2, 2)%>
+<br>
 </body>
 </html>
